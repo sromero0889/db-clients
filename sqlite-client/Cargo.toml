@@ -1,0 +1,11 @@
+[package]
+name = "sqlite-client"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+log = { workspace = true }
+thiserror = { workspace = true }
+rusqlite = { version = "0.31.0", features = ["bundled"] }
+db-client-derive-macro = { path = "../db-client-derive-macro"}
